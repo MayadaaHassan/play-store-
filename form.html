@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Login</title>
+    <style>
+        .form-container, .loginForm {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1 id="sel">Welcome in Survey Treasure</h1>
+    <p id="sele">Enter your personal details and <br>join with us</p>
+    
+    <div class="container">
+        <h1 id="selec">What do you want?</h1>
+        <div class="card-container">
+            <div class="card" onclick="selectOption('user')">
+                <img src="https://cdn.pixabay.com/photo/2018/04/03/14/30/survey-3286948_1280.png" alt="Answer Survey Icon">
+                <div class="card-title">Answer the survey</div>
+                <div class="card-description">Answer the available surveys and provide your opinions.</div>
+            </div>
+            <div class="card" onclick="selectOption('creator')">
+                <img src="https://cdn.pixabay.com/photo/2013/07/13/11/35/question-158453_1280.png" alt="Create Survey Icon">
+                <div class="card-title">Create a new survey</div>
+                <div class="card-description">Create new surveys and get answers from your audience.</div>
+            </div>
+        </div>
+    </div>
+
+    <form action="index.html" id="loginFormCustomer" class="loginForm">
+        <div class="form">
+            <h2 class="cusi">Login</h2>
+            <div class="input-control">
+                <label for="loginusername">Name:</label>
+                <input type="text" id="loginusername" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="input-control">
+                <label for="loginpassword">Password:</label>
+                <input type="password" id="loginpassword" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="footerL">
+                <p class="have">Do not have an account? <a href="#" onclick="showSignUp('user')">Sign up</a></p>
+            </div>
+        </div>
+    </form>
+
+    <div id="customerForm" class="form-container">
+        <form action="index.html" method="POST">
+            <h2 class="cusi">Registration</h2>
+            <label for="customerName">Full Name:</label>
+            <input type="text" id="customerName" name="customer_name" required>
+            <br>
+            <label for="customerEmail">Email:</label>
+            <input type="email" id="customerEmail" name="email" required>
+            <br>
+            <label for="customerPassword">Password:</label>
+            <input type="password" id="customerPassword" name="password" required>
+            <br>
+            <label for="customerAge">What is your age?</label>
+            <input type="number" id="customerAge" name="age" required>
+            <br>
+            <label for="customerfield">What do you study/do?</label>
+            <input type="text" id="customerfield" name="field" required>
+            <br>
+            <label for="customerColor">What is the sky colour? (To verify that you are not a robot)</label>
+            <input type="text" id="customerColor" name="security_question" required>
+            <br>
+            <button type="submit" class="btn">Sign up</button>
+            <div class="footerL">
+                <p class="have">Already have an account? <a href="#" onclick="showLogin('user')">Login</a></p>
+            </div>
+        </form>
+    </div>
+
+    <form action="index.html" id="loginFormCompany" class="loginForm">
+        <div class="form">
+            <h2 class="cusi">Login</h2>
+            <div class="input-control">
+                <label for="loginusername">Name:</label>
+                <input type="text" id="loginusername" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="input-control">
+                <label for="loginpassword">Password:</label>
+                <input type="password" id="loginpassword" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="footerL">
+                <p class="have">Do not have an account? <a href="#" onclick="showSignUp('creator')">Sign up</a></p>
+            </div>
+        </div>
+    </form>
+
+    <div id="creatorForm" class="form-container">
+        <form action="index.html" method="POST">
+            <h2 class="cusi">Registration</h2>
+            <label for="creatorName">Name:</label>
+            <input type="text" id="creatorName" name="creator_name" required>
+            <br>
+            <label for="creatorEmail">Email:</label>
+            <input type="email" id="creatorEmail" name="email" required>
+            <br>
+            <label for="creatorOrganization">Organization/Company:</label>
+            <input type="text" id="creatorOrganization" name="organization" required>
+            <br>
+            <label for="creatorField">Field of Work:</label>
+            <input type="text" id="creatorField" name="field" required>
+            <br>
+            <label for="creatorPassword">Password:</label>
+            <input type="password" id="creatorPassword" name="password" required>
+            <br>
+            <label for="creatorQuestion">What is 3+5? (To verify that you are not a robot)</label>
+            <input type="number" id="creatorQuestion" name="security_question" required>
+            <br>
+            <button type="submit" class="btn">Sign up</button>
+            <div class="footerL">
+                <p class="have">Already have an account? <a href="#" onclick="showLogin('creator')">Login</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
+

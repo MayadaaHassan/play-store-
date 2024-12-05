@@ -1,0 +1,120 @@
+/* ---------------- users --------- */
+.container1 {
+    max-width: 1600px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.font {
+    text-align: center;
+    color:rgb(40, 102, 35) ;    /* margin-bottom: 20px; */
+    width: 100%;
+    font-size: 50px;
+}
+
+.content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.content .user-step {
+    margin-bottom: 70px;
+}
+
+.content .user-step img.nums {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.content .user-step p {
+    display: inline-block;
+    margin: 0;
+    font-size: 25px;
+    line-height: 1.5;
+    color: #555;
+    vertical-align: middle;
+}
+
+.image-container {
+    flex-shrink: 0;
+}
+
+.image-container img {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* ---------------- agencies --------- */
+.container1 {
+    max-width: 1600px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.content1 {
+    flex: 1;
+    padding-left: 10rem;
+}
+
+.content1 .user-step1 {
+    margin-bottom: 70px;
+    
+}
+
+.content1 .user-step1 img.nums {
+    width: 40px;
+    height: 40px;
+    margin-right: 18px;
+    vertical-align: middle;
+}
+
+.content1 .user-step1 p {
+    display: inline-block;
+    margin: 0;
+    font-size: 25px;
+    line-height: 1.5;
+    color: #555;
+    vertical-align: middle;
+}
+
+.image-container1 {
+    flex-shrink: 0;
+}
+
+.image-container1 img {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.top1{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+    color:rgb(40, 102, 35) ;
+    margin-left:50px;
+    margin: 60px;
+}
+.top2{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+    color:rgb(40, 102, 35) ;
+    margin-right:50px;
+    margin: 60px;
+}

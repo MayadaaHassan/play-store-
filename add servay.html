@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Surveys</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background-color: #007bff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .btn-gradient {
+            background: linear-gradient(to right, #007bff, #0056b3);
+            border: none;
+            color: white;
+        }
+        .btn-gradient:hover {
+            background: linear-gradient(to right, #0056b3, #007bff);
+        }
+        .container-custom {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #e9f5ff;
+            border: 1px solid #d6e9f9;
+            border-radius: 10px;
+        }
+        .form-header {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        .shadow-custom {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #d0d0d0;
+        }
+        .empty-message {
+            color: #007bff;
+        }
+        .survey-card {
+            padding: 15px;
+            margin-bottom: 20px;
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom py-3">
+        <a class="navbar-brand" href="#">
+            <img src="treasure.png" alt="Company Logo" width="30" height="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="bootstrap proj.html">Create Rules</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bootstrap proj.html">Create Survey</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="add servay.html">View Surveys</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- View Surveys Section -->
+    <div class="container-custom shadow-custom mt-5">
+        <h2 class="text-center form-header">All Surveys</h2>
+        <div id="surveysList">
+            <p class="text-center empty-message">No surveys created yet.</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JS for displaying surveys -->
+    <script src="servary proj.js">
+        
+    </script>
+</body>
+</html>
+k

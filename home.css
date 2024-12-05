@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*----------- nav bar ---------*/
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    /* margin: 30px; */
+    padding: 15px 30px; /* Adjust padding for better spacing */
+    background-color: #fff; /* Background color to ensure readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin: 0; /* Remove default margin */
+}
+.first{
+    display: flex;
+    /* justify-content: center; */
+    
+}
+
+.btn{
+   margin-top: 20px;
+   margin-left: 10px; /* Add space between buttons */ 
+}
+
+.links{
+    padding-left: 18rem;
+    padding-top: 20px; 
+}
+
+header .logo{
+    font-size: 25px;
+    text-transform:uppercase;
+    color:rgb(40, 102, 35) ;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    color:rgb(40, 102, 35) ;
+    font-size: x-large;
+
+}
+header ul li{
+    margin-right: 20px;
+}
+header ul li a{
+    padding: 6px 15px
+}
+header ul li a:hover, .active{
+    /* background-color: rgba(202, 245, 231, 0.692); */
+    color:rgb(50, 123, 64);
+    border-radius: 20px;
+}
+header img{
+    width: 70px;
+    height: 70px;
+}
+
+/*----------- end nav bar ---------*/
+.main {
+    background-image: url(/img/your-background-image.jpg); /* تأكد من تحديد الصورة بشكل صحيح */
+    background-size: cover; /* لتغطية الخلفية بشكل كامل */
+    background-position: center; /* لضبط موقع الصورة في الخلفية */
+    padding: 20px; /* إضافة حشوة حول المحتوى */
+    text-align: center; /* توسيط النص داخل الحاوية */
+}
+
+.title {
+    text-align: center;
+    font-size: 20px;
+}
+
+.title h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    color:rgb(40, 102, 35) ;
+}
+
+.Welcome {
+    display: flex;
+    align-items: center; /* لمحاذاة العنصرين (النص والصورة) عمودياً */
+    justify-content: center; /* لتوسيط المحتوى */
+    flex-direction: column; /* لضبط العناصر عمودياً */
+    gap: 20px; /* إضافة مسافة بين العناصر */
+}
+
+.Welcome p {
+    font-size: 20px; /* تقليل حجم الخط لجعل النص أكثر توازنًا */
+    margin: 20px; /* إضافة مسافة حول النص */
+    line-height: 1.6; /* تحسين قراءة النص */
+    text-align: center; /* توسيط النص */
+    max-width: 800px; /* ضبط عرض النص لتجنب الطول الكبير */
+}
+
+.Welcome img {
+    max-width: 100%; /* جعل الصورة تتناسب مع حجم الحاوية */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    border-radius: 10px; /* إضافة زوايا مدورة للصورة */
+}
+
+
+/* .sec1{
+    /* background-color: #1D4ED8; 
+/* }  */
+
+        /* <!--  third section>> guide lines --> */
+h2{
+    font-size: 50px;
+    /* font-family:cursive; */
+    font-weight: bolder;
+    text-align: center;
+    text-transform:uppercase;
+    /* opacity: 0.7; */
+    color: rgb(55, 117, 81);
+
+}
+    /* <!-- as a users -->  */
+.user{
+    display: flex;
+    font-size: 30px;
+}
+    /* <!-- as a agency --> */
+.agen{
+    display: flex;
+    font-size: 30px;
+}
+.nums{
+width: 50px;
+height: 50px;
+opacity: 0.7;
+}
+/* <!-- end third section>> guide lines --> */
+
+ /* <!--  fifth section>> sponsers --> */
+ .carousel-inner2 {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-item2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.carousel-content2 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    object-fit: cover;
+}
+
+.carousel-content2 img:hover {
+    opacity: 1;
+}
+
+/* <!--  end fifth section>> sponsers --> */
+
+/* <!--  SIXth section>> COUNTER --> */
+    /* Float four columns side by side */
+    .counter-section1{
+        position: relative;
+        text-align: center;
+        
+    }
+    
+    .img-fluid1 {
+        width: 100%;
+        height: min-content;
+    }
+    
+    .counters1 {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    
+    .row1 {
+        display: flex;
+        justify-content: center;
+        gap: 30px; /* زيادة المسافة بين الكاردات */
+    }
+    
+    .column1 {
+        flex: 1;
+        width: 300px; /* عرض ثابت للكاردات */
+    }
+    
+    .card1 {
+        background-color: rgba(255, 255, 255, 0.8); /* لون الخلفية أبيض مع شفافية 80% */
+        border-radius: 10px; /* منحنيات حواف للكاردات */
+        padding: 40px; /* زيادة الحشوة داخل الكارد */
+        text-align: center;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* زيادة الظل حول الكاردات */
+        font-size: 1.5em; /* زيادة حجم الخط داخل الكارد */
+    }
+  /* <!-- end SIXth section>> COUNTER --> */
+
+@keyframes animateUp {
+    0% {
+      transform: translateY(-8rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+@keyframes animateDown {
+    0% {
+      transform: translateY(8rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+@keyframes animateLeft {
+    0% {
+      transform: translateX(-8rem);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+@keyframes animateRight {
+    0% {
+      transform: translateX(8rem);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+
+
+.animate-left {
+    transform: translateX(-8rem);
+    animation: animateLeft 1.5s forwards !important; 
+}
+.animate-right {
+    transform: translateX(8rem);
+    animation: animateRight 1.5s forwards !important; 
+}
+
+.animate-down {
+    transform: translateY(8rem);
+    animation: animateDown 1.5s forwards !important; 
+}
+.animate-up {
+    transform: translateY(-8rem);
+    animation: animateUp 2.5s forwards !important; 
+}
+
+.carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-image:url(/img/freepik-export-20240818041931clYE.png);
+  }
+
+  .carousel-control-next-icon {
+    background-image: url(/img/freepik-export-20240818041853h0MC.png);
+  }
